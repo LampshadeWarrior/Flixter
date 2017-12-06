@@ -10,13 +10,18 @@
     </h2>
     <br />
     <div class="row">
-    <div class="col-sm-8 col-12">
-    <%= course.description %>
-    </div>
-    <div class="col-sm-4 col-12 text-center">
-      <%= link_to 'More Details...', course_path(course), class: 'btn btn-primary btn-large' %>
+      <div class="col-sm-4 col-12">
+        <%= course.description %>
+      </div>
+      <div class="col-sm-4 col-12 text-center">
+        <%= link_to 'More Details...', course_path(course), class: 'btn btn-primary btn-large' %>
+      </div>
+        <% if course.image.present? %>
+          <%= image_tag course.image, class: 'img-fluid' %>
+        <% end %>
+      </div>
+    <% end %>
     </div>
   </div>
   <br class="clr" />
-  <% end %>
 </div>
