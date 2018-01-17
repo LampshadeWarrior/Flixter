@@ -61,9 +61,47 @@
 
   <div id="footer">
     <div class="container">
-      <b>Teachers</b>
-      <br />
-      <%= link_to 'Teach a Course', new_instructor_course_path %>
+      <div class="row">
+        <div class="col-12 col-sm-3">
+          <b>Teachers</b>
+          <br />
+          <%= link_to 'Teach a Course', new_instructor_course_path %>
+          <br />
+          <%= link_to 'My Dashboard', dashboard_path %>
+        </div>
+        <div class="col-12 col-sm-3">
+          <b>About</b>
+          <br />
+          <%= link_to 'Team', '#' %>
+          <br />
+          <%= link_to 'Careers', '#' %>
+          <br />
+          <%= link_to 'Privacy Policy', '#' %>
+        </div>
+        <div class="col-12 col-sm-3">
+          <b>Contact</b>
+          <br />
+          itpsinger@gmail.com
+          <br />
+          523 Leeds Avenue
+          <br />
+          Indianapolis IN, 46203
+        </div>
+        <div class="col-12 col-sm-3 social">
+          <b>Social</b>
+          <br />
+          <br />
+          <%= link_to 'https://github.com/LampshadeWarrior' do %>
+            <span class="fa fa-github-square fa-2x"></span>
+          <% end %>
+          <%= link_to 'https://www.instagram.com/lampshadewarrior/' do %>
+            <span class="fa fa-instagram fa-2x"></span>
+          <% end %>
+          <%= link_to 'https://www.linkedin.com/in/iann-singer-27291280/' do %>
+            <span class="fa fa-linkedin fa-2x"></span>
+          <% end %>
+        </div>
+      </div>
     </div>
   </div>
   <script src="http://vjs.zencdn.net/6.4.0/video.js"></script>
